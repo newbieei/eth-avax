@@ -18,9 +18,9 @@ contract SmartContract {
         balance = balance + 500;
     }
 
-    function numberRevert (uint _balance) external {
+    function newBalance (uint _balance) external {
         if (balance == _balance){
-                revert("Should obtain new balance");
+                revert("Should input new balance");
         }
         balance = _balance;
     }
